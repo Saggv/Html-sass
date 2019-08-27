@@ -1,0 +1,29 @@
+%heading{
+    font-size: 1.9rem;
+    
+}
+.heading-2{
+     @extend %heading;
+     font-size: 2.9rem;
+     font-weight: 600;
+}
+.heading-3{
+    @extend %heading;
+    font-size: 2rem;
+    
+
+}
+.heading-4{
+    @extend %heading;
+    font-weight: 600;
+}
+
+.btn{
+     border:none;
+     outline: none;
+     background-color:$color-primary-dark;
+     padding:1rem 2rem;
+     &:hover{
+         background-color:$color-primary;
+     }
+}

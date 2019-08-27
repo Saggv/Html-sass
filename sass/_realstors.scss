@@ -1,0 +1,39 @@
+.realstors{
+    background-color:$color-secondary;
+    font-size: 1.6rem;
+    @media screen and (max-width:600px) {
+        font-size:43.75%;
+
+    }
+
+    grid-column: col-start 7/full-end;
+
+     display:grid;
+     justify-content: center;
+     align-content: center;
+
+     &__heading{
+         font-size: inherit;
+         grid-column: 1/-1;
+     }
+    &__box{
+        display: grid;
+        grid-template-columns: min-content max-content;
+
+        @media screen and (max-width:600px) {
+            grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+        }
+        align-self: center;
+        align-items: center;
+
+
+        font-size: inherit;
+    
+        grid-gap:2rem;
+        & img{
+             width: 10rem;
+             width: 10rem;
+             border-radius: 50%;
+        }
+    }
+}

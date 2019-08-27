@@ -1,0 +1,33 @@
+.footer{
+    background-color: $color-secondary;
+
+    grid-column:full-start/full-end;
+
+
+}
+.nav{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr));
+    grid-gap:2rem;
+    list-style: none;
+    
+    padding:6rem 0;
+
+    &__link{
+        font-size: 1.7rem;
+        color:#fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        align-items: center;
+        text-align: center;
+        
+    }
+}
+.copyright{
+    margin:0 auto;
+    width: 70%;
+    text-align: center;
+    font-size: 1.7rem;
+    color: $color-grey-light-2;
+    
+}
